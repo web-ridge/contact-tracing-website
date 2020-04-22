@@ -16,12 +16,13 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0000ff" />
     <meta name="msapplication-TileColor" content="#2d89ef" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="stylesheet" href="output.css?ver=1.0.3" />
+    <meta name="theme-color" content="#7eadf1" />
+    <link rel="stylesheet" href="output.css?ver=1.0.6" />
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800&display=swap"
       rel="stylesheet"
     />
+    
   </head>
 
   <body>
@@ -36,6 +37,7 @@
       <section>
         <div class="resize">
           <h1 class="animated fadeInUp">Jij hebt de controle</h1>
+          <iframe src="https://www.youtube-nocookie.com/embed/te_PKOa8TsY"></iframe>
         </div>
         <div class="resize small fade">
           <p>
@@ -46,10 +48,8 @@
             opgeslagen.
           </p>
           <p>
-            Als jij COVID-19 hebt kun je dit zelf melden via de app (of met een
-            QR-code). Je stuurt dan jouw Bluetooth contacten op zonder enige
-            vorm van identificatie zodat er nooit is te bewijzen wie deze data
-            verstuurd heeft.
+            De methode is overeenkomstig zoals beschreven staat in het
+            <a href="https://github.com/DP-3T/documents/">DP3T statement.</a>
           </p>
           <div class="grid">
             <a
@@ -117,6 +117,35 @@
               volg ons
             </a>
           </div>
+          <br/><br/>
+          <p>
+            De volgende punten zijn op onze app van toepassing.
+            <ul>
+              <li>Het werkt op iOS & Android;</li>
+              <li>Het is niet mogelijk om iemands anders meldingen in te zien;</li>
+              <li>Het is niet mogelijk om zonder authenticatie data in te zien;</li>
+              <li>Er staat nergens opgeslagen of een Bluetooth nummer besmet is;</li>
+              <li>Er gebeurt niets zonder jouw expliciete toestemming;</li>
+              <li>Als je data niet verzend naar de server staat deze lokaal  opgeslagen met AES-256+SHA2 encryptie en een 64-byte encryption key.</li>
+              <li>De encryption key wordt opgeslagen in Android keystore of Apple Keychain zodat deze niet beschikbaar is voor aanvallers.</li>
+              <li>Deze oplossing is schaalbaar en kan zonder problemen voor miljoenen gebruikers uitgerold worden.</li>
+              <li>De data die op de server staat bevat geen persoonsgevens.</li>
+              <li>De data die op de server wordt niet langer dan 4 weken opgeslagen.</li>
+              <li>Je kunt ten allen tijde zelf je data verwijderen via de applicatie.</li>
+              <li>Eventuele gegevens die naar de server verstuurd worden gebeuren via de modernste SSL beveiligingen.</li>
+              <li>De database wordt geëncrypt opgeslagen met <a href="https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup">LUKS.</a></li>
+              <li>De databaseverbinding tussen de API en server gebeurt met een SSL verbinding.</li>
+              <li>De toegang tot de beheerconsole is direct en indirect beveiligd met 2-factor authenticatie codes en een digitale kluis.</li>
+              <li>Lokale gezondheidsinstanties kunnen parameters voor een melding veranderen zonder een app-update.</li>
+              <li>Backend open-source</li>
+              <li>Bewezen technieken</li>
+            </ul>
+          </p>
+          <p>
+            Als jij COVID-19 hebt kun je dit (op dit moment) zelf melden via de app (wij willen gaan samenwerken met de GGD voor deze code, dus tweet er op los om dit mogelijk te maken). 
+            Je stuurt de Bluetooth nummers die je bent tegengekomen er wordt niet doorgestuurd en niet opgeslagen wie deze contacten heeft verzonden.
+          </p>
+         
         </div>
       </section>
     </header>
